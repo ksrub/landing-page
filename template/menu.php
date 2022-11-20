@@ -29,6 +29,9 @@
 								<li class="sub-menu--item"><a href="./db-anggota/"><em>DB Anggota</em> <span class="blink">Baru!</span></a></li>
 							</ul>
 						</li>
+						<li class="nav-item">
+							<a href="http://ksr.ub.ac.id/" class="nav-link-item">Blog</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
