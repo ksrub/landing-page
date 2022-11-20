@@ -32,6 +32,9 @@
 						<li class="nav-item">
 							<a href="http://ksr.ub.ac.id/" class="nav-link-item">Blog</a>
 						</li>
+						<li class="nav-item">
+							<a href="#kata-mereka" class="nav-link-item">Kata Mereka</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
