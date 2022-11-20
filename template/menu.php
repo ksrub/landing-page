@@ -25,11 +25,9 @@
 							<a href="#" class="nav-link-item drop-trigger">Produk <i class="fas fa-angle-down"></i>
 							</a>
 							<ul class="sub-menu" id="submenu-9">
-								<li class="sub-menu--item"><a href=""><em>SSO Account</em> <span class="blink">Segera !</span></a></li>
+								<li class="sub-menu--item"><a href="./sso-account/"><em>SSO Account</em> <span class="blink">Baru!</span></a></li>
+								<li class="sub-menu--item"><a href="./db-anggota/"><em>DB Anggota</em> <span class="blink">Baru!</span></a></li>
 							</ul>
-						</li>
-						<li class="nav-item">
-							<a href="" class="nav-link-item">Selayang Pandang</a>
 						</li>
 					</ul>
 				</nav>
