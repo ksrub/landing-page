@@ -115,7 +115,7 @@
 			</div>
 		</div>
 		<!-- Testimonial section start -->
-		<div class="testimonial-area-l-13 position-relative overflow-hidden z-index-1">
+		<div id="#kata-mereka" class="testimonial-area-l-13 position-relative overflow-hidden z-index-1">
 			<div class="container" style="margin-bottom: 75px;">
 				<div class="row justify-content-center">
 					<div class="col-xl-11">
