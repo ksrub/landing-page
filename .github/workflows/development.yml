@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  deploy:
+  web-deploy:
     name: Process to testing
     runs-on: ubuntu-latest
     
@@ -22,3 +22,6 @@ jobs:
         password: ${{ secrets.SLAVE_PASSWORD }}
         port: ${{ secrets.DEFAULT_PORT }}
         server-dir: ${{ secrets.SLAVE_PATH }}
+        exclude: |
+          **/.git*
+          **/.git*/**
