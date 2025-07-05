@@ -1,19 +1,16 @@
-name: Run on branch non "master"
-
 on:
   push:
     branches-ignore:
       - master
-
+name: Run on branch non "master"
 jobs:
   web-deploy:
     name: Process to testing
     runs-on: ubuntu-latest
-
     steps:
     - name: Get latest code
       uses: actions/checkout@v4
-    
+
     - name: Sync new changes
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
@@ -26,3 +23,4 @@ jobs:
         exclude: |
           **/.git*
           **/.git*/**
+        dry-run: true
