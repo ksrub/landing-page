@@ -1,13 +1,15 @@
+name: Run on branch non "master"
+
 on:
   push:
     branches-ignore:
       - master
 
-name: Run on branch non "master"
 jobs:
-  web-deploy:
+  deploy:
     name: Process to testing
-    runs-on: ubuntu-latest    
+    runs-on: ubuntu-latest
+
     steps:
     - name: Get latest code
       uses: actions/checkout@v4
@@ -19,6 +21,7 @@ jobs:
         username: ${{ secrets.SLAVE_USERNAME }}
         password: ${{ secrets.SLAVE_PASSWORD }}
         port: ${{ secrets.DEFAULT_PORT }}
+        protocol: ftp
         server-dir: ${{ secrets.SLAVE_PATH }}
         exclude: |
           **/.git*
