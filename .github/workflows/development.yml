@@ -18,7 +18,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.SLAVE_SERVER }}
-        port: ${{ secrets.DEFAULT_PORT }}
         username: ${{ secrets.SLAVE_USERNAME }}
         password: ${{ secrets.SLAVE_PASSWORD }}
+        port: ${{ secrets.DEFAULT_PORT }}
         server-dir: ${{ secrets.SLAVE_PATH }}
