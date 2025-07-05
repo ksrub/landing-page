@@ -1,0 +1,24 @@
+name: Run on branch non "master"
+
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  deploy:
+    name: Process to testing
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v4
+    
+    - name: Sync new changes
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.SLAVE_SERVER }}
+        port: ${{ secrets.DEFAULT_PORT }}
+        username: ${{ secrets.SLAVE_USERNAME }}
+        password: ${{ secrets.SLAVE_PASSWORD }}
+        server-dir: ${{ secrets.SLAVE_PATH }}
