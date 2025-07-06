@@ -14,12 +14,12 @@ jobs:
     - name: Sync new changes
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ${{ secrets.slave_server }}
-        username: ${{ secrets.slave_username }}
-        password: ${{ secrets.slave_password }}
-        port: ${{ secrets.default_port }}
+        server: ${{ secrets.SLAVE_SERVER }}
+        username: ${{ secrets.SLAVE_USERNAME }}
+        password: ${{ secrets.SLAVE_PASSWORD }}
+        port: ${{ secrets.DEFAULT_PORT }}
         protocol: ftp
-        server-dir: ${{ secrets.slave_path }}
+        server-dir: ${{ secrets.SLAVE_PATH }}
         exclude: |
           **/.git*
           **/.git*/**
