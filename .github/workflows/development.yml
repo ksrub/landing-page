@@ -23,4 +23,3 @@ jobs:
         exclude: |
           **/.git*
           **/.git*/**
-        dry-run: true
